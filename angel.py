@@ -56,8 +56,6 @@ table = soup.find("div",{"class":"results_holder"})
 elem_all = table.find_all("div",{"class":"base item"})
 #print(len(elem_all))
 for elem in elem_all:
-    #print("+++++++++++++++")
-    #print(elem)
 
     name_s = elem.find("div",{"class":"name"})
     name = re.sub("\n+", "", name_s.get_text())
@@ -78,4 +76,3 @@ for elem in elem_all:
     csvFile = open("./files/angel.csv", 'at')
     writer = csv.writer(csvFile)
 
-i = 1
