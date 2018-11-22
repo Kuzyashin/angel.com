@@ -37,7 +37,7 @@ def open_connect():
     ff_prof.set_preference( "network.proxy.socks_port", 9150 )
     ff_prof.set_preference( "network.proxy.socks_remote_dns", True )
     
-    DETACHED_PROCESS = 0x00000008
+    #DETACHED_PROCESS = 0x00000008
     tor_process = subprocess.Popen(r"C:\Users\yuryy\Desktop\Tor Browser\Browser\firefox.exe")
     driver = webdriver.Firefox(ff_prof)     
     driver1 = webdriver.Firefox(ff_prof)     
